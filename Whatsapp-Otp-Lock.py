@@ -41,10 +41,10 @@ def temp_ban_api(country_code, phone_number):
         if response.status_code == 200:
             return "\n\n[✓] Successfully done\n  Completed..!!\n\nThank You For Using My Script!!\n Created By Krishna!!\n"
         else:
-            return "[bold red][X] [bold green]Not done"
+            return "Not done"
     except requests.exceptions.RequestException as e:
-        return f"[bold red][?]Error: {e}"
-
+        return f"Error: {e}"
+        
 def main():
     otp_lock_banner()
     country_code = input("\n\033[90m[\033[91m?\033[90m]] \033[92m[X]Enter Your Country Code (e.g., +91): " '\n └─> ')
